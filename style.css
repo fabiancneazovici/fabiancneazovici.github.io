@@ -11,3 +11,135 @@
 .navbar-brand {
     font-family: "JetBrains Mono", monospace;
 }
+
+/****************************************
+ * HOME PAGE
+ ***************************************/
+.bg-image {
+    background-image: url("/images/bg-home-page.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-top: 3.5em;
+    padding: 5em;
+}
+
+.divider {
+    margin: 1em auto;
+    border: 0;
+    border-radius: 5px;
+    border-top: 2px solid white;
+
+    width: 16em;
+}
+
+.fs-name-1,
+.fs-name-2 {
+    margin: 0;
+    line-height: 1em;
+}
+
+.fs-name-1 {
+    font-size: 5.3rem;
+}
+
+.fs-name-2 {
+    font-size: 2.7rem;
+}
+
+.fs-work-1,
+.fs-work-2 {
+    margin: 0;
+    line-height: 1em;
+}
+
+.fs-work-1 {
+    font-size: 3.3rem;
+}
+
+.fs-work-2 {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 576px) {
+    .divider {
+        border-top: 3px solid white;
+    }
+    
+    .fs-name-1 {
+        font-size: 8rem;
+    }
+    
+    .fs-name-2 {
+        font-size: 4.1rem;
+    }
+
+    .fs-work-1 {
+        font-size: 5rem;
+    }
+    
+    .fs-work-2 {
+        font-size: 2.1rem;
+    }
+
+    .divider {
+        width: 25em;
+    }
+}
+
+@media (min-width: 768px) {
+    .bg-image {
+        padding: 14em;
+    }
+
+    .divider {
+        border-top: 4px solid white;
+    }
+
+    .fs-name-1 {
+        font-size: 15rem;
+    }
+    
+    .fs-name-2 {
+        font-size: 7.5rem;
+    }
+
+    .fs-work-1 {
+        font-size: 9rem;
+    }
+    
+    .fs-work-2 {
+        font-size: 3.8rem;
+    }
+
+    .divider {
+        width: 45em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .divider {
+        border-top: 5px solid white;
+    }
+
+    .fs-name-1 {
+        font-size: 18rem;
+    }
+    
+    .fs-name-2 {
+        font-size: 9.1rem;
+    }
+
+    .fs-work-1 {
+        font-size: 11rem;
+    }
+    
+    .fs-work-2 {
+        font-size: 4.7rem;
+    }
+
+    .divider {
+        width: 55em;
+    }
+}
