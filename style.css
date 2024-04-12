@@ -168,18 +168,18 @@
 .section-title .front {
     position: relative;
     top: 1.3em;
-    font-size: 2.5rem;
+    font-size: 3.2rem;
 }
 
 .section-title .behind {
     position: relative;
-    bottom: 0.23em;
-    font-size: 5rem;
+    bottom: 0.24em;
+    font-size: 6.4rem;
     opacity: .20;
 }
 
 .subsection-title {
-    height: 3em;
+    height: 4em;
     margin: 0;
 }
 
@@ -191,13 +191,13 @@
 .subsection-title .front {
     position: relative;
     top: 1em;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
 }
 
 .subsection-title .behind {
     position: relative;
-    bottom: 0.43em;
-    font-size: 3rem;
+    bottom: 0.32em;
+    font-size: 3.6rem;
     opacity: .20;
 }
 
@@ -209,11 +209,11 @@
     display: block;
     filter: drop-shadow(0.5em 0.5em orange);
     margin: 1em auto;
-    max-height: 20em;
+    max-height: 18em;
 }
 
 .brief p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: white;
     text-align: justify;
 }
@@ -222,72 +222,11 @@
     color: orange;
 }
 
-@media (min-width: 576px) {
-    .section-title {
-        height: 8em;
-    }
-
-    .section-title .front {
-        font-size: 4rem;
-    }
-    
-    .section-title .behind {
-        font-size: 8rem;
-    }
-
-    .subsection-title {
-        height: 4em;
-    }
-
-    .subsection-title .front {
-        font-size: 3rem;
-        top: 0.8em;
-    }
-    
-    .subsection-title .behind {
-        font-size: 6rem;
-        bottom: 0.47em;
-    }
-
-    .brief img {
-        float: left;
-        height: 15em;
-        margin-right: 2em;
-    }
-
-    .brief p {
-        font-size: 1.8rem;
-    }
+.card-title {
+    font-size: 2.4rem;
 }
 
-@media (min-width: 768px) {
-    .section-title {
-        height: 12em;
-    }
-
-    .section-title .front {
-        font-size: 6rem;
-    }
-    
-    .section-title .behind {
-        font-size: 12rem;
-    }
-
-    .subsection-title {
-        height: 8em;
-    }
-
-    .subsection-title .front {
-        font-size: 4rem;
-        top: 1.1em;
-    }
-    
-    .subsection-title .behind {
-        font-size: 8rem;
-        bottom: 0.35em;
-    }
-
-    .brief img {
-        height: 20em;
-    }
+.card-text {
+    font-size: 1.6rem;
+    color: lightgray;
 }
