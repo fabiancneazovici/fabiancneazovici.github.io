@@ -230,3 +230,7 @@
     font-size: 1.6rem;
     color: lightgray;
 }
+
+.card-header {
+    font-size: 1.6rem;
+}
