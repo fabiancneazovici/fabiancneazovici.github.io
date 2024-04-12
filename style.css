@@ -1,5 +1,6 @@
 :root {
     --bg-1: #252656;
+    --bg-2: #092540;
 }
 
 *, *::after, *::before {
@@ -233,4 +234,41 @@
 
 .card-header {
     font-size: 1.6rem;
+}
+
+/****************************************
+ * SKILLS PAGE
+ ***************************************/
+.skills {
+    background: var(--bg-2);
+}
+
+.skills img {
+    display: block;
+    max-height: 15em;
+    margin: 0 auto;
+}
+
+.skills h3 {
+    font-family: 'Jetbrains Mono', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.skills .progress {
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .skills img {
+        max-height: 10em;
+    }
+}
+
+@media (min-width: 992px) {
+    .skills img {
+        max-height: 14em;
+    }
 }
