@@ -362,3 +362,60 @@
 .portfolio .col-md-4:nth-child(4) a:hover {
     background: rgb(114, 0, 0);
 }
+
+/****************************************
+ * CONTACT
+ ***************************************/
+.contact {
+background: var(--bg-2);
+}
+
+.contact input {
+padding: 15px 20px;
+outline: none;
+background: transparent;
+border-radius: 5px;
+color: #fff;
+border: 1px solid orange;
+font-size: 1.6rem;
+transition: 0.4s;
+}
+
+.contact textarea {
+    padding: 15px 20px;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid orange;
+    font-size: 1.6rem;
+    transition: 0.4s;
+    resize: none;
+}
+
+.contact label {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.contact button {
+    background: rgb(255, 166, 0);
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: 'Jet-brains Mono', sans-serif;
+    color: #fff;
+}
+
+.contact button:hover {
+    background: rgba(255, 166, 0, 0.822);
+}
+
+.contact svg {
+    width: 3em;
+    height: 3em;
+    color: white;
+}
+
+.contact svg:hover {
+    color: darkgray;
+}
