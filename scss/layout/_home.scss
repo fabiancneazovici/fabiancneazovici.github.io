@@ -1,0 +1,115 @@
+.bg-image {
+    background-image: url("/images/bg-home-page.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-top: 3.5em;
+    padding: 5em;
+
+    @media (min-width: 768px) {
+        padding: 14em;
+    }
+}
+
+.home {
+    &__fs-name-1,
+    &__fs-name-2 {
+        margin: 0;
+        line-height: 1em;
+    }
+
+    &__fs-name-1 {
+        font-size: 5.3rem;
+
+        @media (min-width: 576px) {
+            font-size: 8rem;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 15rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 18rem;
+        }
+    }
+
+    &__fs-name-2 {
+        font-size: 2.7rem;
+
+        @media (min-width: 576px) {
+            font-size: 4.1rem;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 7.5rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 9.1rem;
+        }
+    }
+
+    &__divider {
+        margin: 1em auto;
+        border: 0;
+        border-radius: 5px;
+        border-top: 2px solid white;
+    
+        width: 16em;
+
+        @media (min-width: 576px) {
+            border-top: 3px solid white;
+            width: 25em;
+        }
+
+        @media (min-width: 768px) {
+            border-top: 4px solid white;
+            width: 45em;
+        }
+
+        @media (min-width: 1200px) {
+            border-top: 5px solid white;
+            width: 55em;
+        }
+    }
+
+    &__fs-work-1,
+    &__fs-work-2 {
+        margin: 0;
+        line-height: 1em;
+    }
+
+    &__fs-work-1 {
+        font-size: 3.3rem;
+
+        @media (min-width: 576px) {
+            font-size: 5rem;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 9rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 11rem;
+        }
+    }
+
+    &__fs-work-2 {
+        font-size: 1.4rem;
+
+        @media (min-width: 576px) {
+            font-size: 2.1rem;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 3.8rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 4.7rem;
+        }
+    }
+}

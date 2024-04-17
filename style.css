@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --bg-1: #252656;
     --bg-2: #092540;
 }
@@ -91,19 +91,19 @@
         font-size: 3.2rem;
         opacity: .20;
     }
-}
+} */
 
 /****************************************
  * NAVBAR
  ***************************************/
-.navbar-brand {
+/* .navbar-brand {
     font-family: "JetBrains Mono", monospace;
-}
+} */
 
 /****************************************
  * HOME PAGE
  ***************************************/
-.bg-image {
+/* .bg-image {
     background-image: url("/images/bg-home-page.jpg");
     background-position: center;
     background-size: cover;
@@ -230,12 +230,12 @@
     .divider {
         width: 55em;
     }
-}
+} */
 
 /****************************************
  * ABOUT PAGE
  ***************************************/
-.about {
+/* .about {
     background: var(--bg-1);
 }
 
@@ -271,12 +271,12 @@
 
 .card-header {
     font-size: 1.6rem;
-}
+} */
 
 /****************************************
  * SKILLS PAGE
  ***************************************/
-.skills {
+/* .skills {
     background: var(--bg-2);
 }
 
@@ -308,12 +308,12 @@
     .skills img {
         max-height: 14em;
     }
-}
+} */
 
 /****************************************
  * PORTFOLIO PAGE
  ***************************************/
-.portfolio {
+/* .portfolio {
     background: var(--bg-1);
 }
 
@@ -321,7 +321,6 @@
     display: flex;
     font-weight: 700;
     font-size: 1.6rem;
-    /* height: 8em; */
     align-items: center;
     justify-content: center;
     border-radius: 10px;
@@ -361,12 +360,12 @@
 
 .portfolio .col-md-4:nth-child(4) a:hover {
     background: rgb(114, 0, 0);
-}
+} */
 
 /****************************************
  * CONTACT
  ***************************************/
-.contact {
+/* .contact {
 background: var(--bg-2);
 }
 
@@ -418,4 +417,4 @@ transition: 0.4s;
 
 .contact svg:hover {
     color: darkgray;
-}
+} */

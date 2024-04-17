@@ -1,0 +1,381 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --ff-1: "Roboto", sans-serif;
+  --ff-2: "JetBrains Mono", monospace;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.section-title {
+  height: 5em;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .section-title {
+    height: 4em;
+    margin: 0;
+  }
+}
+.section-title span {
+  font-weight: 700;
+  color: var(--text-2);
+}
+.section-title__front {
+  position: relative;
+  top: 1.3em;
+  font-size: 3.2rem;
+}
+@media (max-width: 576px) {
+  .section-title__front {
+    top: 1.5em;
+    font-size: 2.4rem;
+  }
+}
+.section-title__behind {
+  position: relative;
+  bottom: 0.24em;
+  font-size: 6.4rem;
+  opacity: 0.2;
+}
+@media (max-width: 576px) {
+  .section-title__behind {
+    bottom: 0.05em;
+    font-size: 4rem;
+    opacity: 0.2;
+  }
+}
+
+.subsection-title {
+  height: 4em;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .subsection-title {
+    height: 3em;
+    margin: 0;
+  }
+}
+.subsection-title span {
+  font-weight: 700;
+  color: var(--text-2);
+}
+.subsection-title__front {
+  position: relative;
+  top: 1em;
+  font-size: 2.4rem;
+}
+@media (max-width: 576px) {
+  .subsection-title__front {
+    font-size: 1.8rem;
+  }
+}
+.subsection-title__behind {
+  position: relative;
+  bottom: 0.32em;
+  font-size: 3.6rem;
+  opacity: 0.2;
+}
+@media (max-width: 576px) {
+  .subsection-title__behind {
+    bottom: 0.38em;
+    font-size: 3.2rem;
+    opacity: 0.2;
+  }
+}
+
+:root {
+  --bg-1: #252656;
+  --bg-2: #092540;
+  --text-1: lightgray;
+  --text-2: orange;
+}
+
+.navbar-brand {
+  font-family: var(--ff-2);
+}
+
+.bg-image {
+  background-image: url("/images/bg-home-page.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 3.5em;
+  padding: 5em;
+}
+@media (min-width: 768px) {
+  .bg-image {
+    padding: 14em;
+  }
+}
+
+.home__fs-name-1, .home__fs-name-2 {
+  margin: 0;
+  line-height: 1em;
+}
+.home__fs-name-1 {
+  font-size: 5.3rem;
+}
+@media (min-width: 576px) {
+  .home__fs-name-1 {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 768px) {
+  .home__fs-name-1 {
+    font-size: 15rem;
+  }
+}
+@media (min-width: 1200px) {
+  .home__fs-name-1 {
+    font-size: 18rem;
+  }
+}
+.home__fs-name-2 {
+  font-size: 2.7rem;
+}
+@media (min-width: 576px) {
+  .home__fs-name-2 {
+    font-size: 4.1rem;
+  }
+}
+@media (min-width: 768px) {
+  .home__fs-name-2 {
+    font-size: 7.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .home__fs-name-2 {
+    font-size: 9.1rem;
+  }
+}
+.home__divider {
+  margin: 1em auto;
+  border: 0;
+  border-radius: 5px;
+  border-top: 2px solid white;
+  width: 16em;
+}
+@media (min-width: 576px) {
+  .home__divider {
+    border-top: 3px solid white;
+    width: 25em;
+  }
+}
+@media (min-width: 768px) {
+  .home__divider {
+    border-top: 4px solid white;
+    width: 45em;
+  }
+}
+@media (min-width: 1200px) {
+  .home__divider {
+    border-top: 5px solid white;
+    width: 55em;
+  }
+}
+.home__fs-work-1, .home__fs-work-2 {
+  margin: 0;
+  line-height: 1em;
+}
+.home__fs-work-1 {
+  font-size: 3.3rem;
+}
+@media (min-width: 576px) {
+  .home__fs-work-1 {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 768px) {
+  .home__fs-work-1 {
+    font-size: 9rem;
+  }
+}
+@media (min-width: 1200px) {
+  .home__fs-work-1 {
+    font-size: 11rem;
+  }
+}
+.home__fs-work-2 {
+  font-size: 1.4rem;
+}
+@media (min-width: 576px) {
+  .home__fs-work-2 {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 768px) {
+  .home__fs-work-2 {
+    font-size: 3.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .home__fs-work-2 {
+    font-size: 4.7rem;
+  }
+}
+
+.about {
+  background: var(--bg-1);
+}
+
+.brief {
+  max-width: 80em;
+}
+.brief img {
+  display: block;
+  filter: drop-shadow(0.5em 0.5em orange);
+  margin: 1em auto;
+  max-height: 18em;
+}
+.brief p {
+  font-size: 1.6rem;
+  color: var(--text-1);
+  text-align: justify;
+}
+.brief span {
+  color: var(--text-2);
+}
+
+.card-title {
+  font-size: 2.4rem;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  color: var(--text-1);
+}
+
+.card-header {
+  font-size: 1.6rem;
+}
+
+.skills {
+  background: var(--bg-2);
+}
+.skills img {
+  display: block;
+  max-height: 15em;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .skills img {
+    max-height: 10em;
+  }
+}
+@media (min-width: 992px) {
+  .skills img img {
+    max-height: 14em;
+  }
+}
+.skills h3 {
+  font-family: var(--ff-2);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+.skills .progress {
+  margin: 0 auto;
+}
+
+.portfolio {
+  background: var(--bg-1);
+}
+.portfolio a {
+  display: flex;
+  font-weight: 700;
+  font-size: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.portfolio a:hover {
+  text-decoration: none;
+}
+.portfolio .col-md-4:nth-child(1) a {
+  background: orange;
+}
+.portfolio .col-md-4:nth-child(1) a:hover {
+  background: rgb(185, 121, 0);
+}
+.portfolio .col-md-4:nth-child(2) a {
+  background: darkcyan;
+}
+.portfolio .col-md-4:nth-child(2) a:hover {
+  background: rgb(0, 117, 117);
+}
+.portfolio .col-md-4:nth-child(3) a {
+  background: darkmagenta;
+}
+.portfolio .col-md-4:nth-child(3) a:hover {
+  background: rgb(113, 0, 113);
+}
+.portfolio .col-md-4:nth-child(4) a {
+  background: darkred;
+}
+.portfolio .col-md-4:nth-child(4) a:hover {
+  background: rgb(114, 0, 0);
+}
+
+.contact {
+  background: var(--bg-2);
+}
+.contact input {
+  padding: 15px 20px;
+  outline: none;
+  background: transparent;
+  border-radius: 5px;
+  color: var(--text-1);
+  border: 1px solid orange;
+  font-size: 1.6rem;
+  transition: 0.4s;
+}
+.contact textarea {
+  padding: 15px 20px;
+  outline: none;
+  background: transparent;
+  border-radius: 5px;
+  color: var(--text-1);
+  border: 1px solid orange;
+  font-size: 1.6rem;
+  transition: 0.4s;
+  resize: none;
+}
+.contact label {
+  color: white;
+  font-size: 1.4rem;
+}
+.contact button {
+  background: rgb(255, 166, 0);
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "Jet-brains Mono", sans-serif;
+  color: var(--text-1);
+}
+.contact button:hover {
+  background: rgba(255, 166, 0, 0.822);
+}
+.contact svg {
+  width: 3em;
+  height: 3em;
+  color: var(--text-1);
+}
+.contact svg:hover {
+  color: darkgray;
+}/*# sourceMappingURL=style.css.map */

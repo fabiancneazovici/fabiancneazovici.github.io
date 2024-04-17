@@ -1,0 +1,53 @@
+.contact {
+    background: var(--bg-2);
+
+    input {
+        padding: 15px 20px;
+        outline: none;
+        background: transparent;
+        border-radius: 5px;
+        color: var(--text-1);
+        border: 1px solid orange;
+        font-size: 1.6rem;
+        transition: 0.4s;
+    }
+
+    textarea {
+        padding: 15px 20px;
+        outline: none;
+        background: transparent;
+        border-radius: 5px;
+        color: var(--text-1);
+        border: 1px solid orange;
+        font-size: 1.6rem;
+        transition: 0.4s;
+        resize: none;
+    }
+
+    label {
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    button {
+        background: rgb(255, 166, 0);
+        font-weight: 700;
+        font-size: 1.6rem;
+        font-family: 'Jet-brains Mono', sans-serif;
+        color: var(--text-1);
+    }
+
+    button:hover {
+        background: rgba(255, 166, 0, 0.822);
+    }
+
+    svg {
+        width: 3em;
+        height: 3em;
+        color: var(--text-1);
+    }
+
+    svg:hover {
+        color: darkgray;
+    }
+}

@@ -1,0 +1,31 @@
+.skills {
+    background: var(--bg-2);
+
+    img {
+        display: block;
+        max-height: 15em;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+            max-height: 10em;
+        }
+
+        @media (min-width: 992px) {
+            img {
+                max-height: 14em;
+            }
+        }
+    }
+
+    h3 {
+        font-family: var(--ff-2);
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+    }
+
+    .progress {
+        margin: 0 auto;
+    }
+}
