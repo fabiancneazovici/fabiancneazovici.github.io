@@ -11,25 +11,12 @@
   --ff-2: "JetBrains Mono", monospace;
 }
 
-p {
-  margin-top: 0;
-}
-
-a,
-a:active,
-a:visited,
-a:hover {
-  text-decoration: none;
-}
-
 .section-title {
-  height: 5em;
-  margin: 0;
+  height: 6em;
 }
 @media (max-width: 576px) {
   .section-title {
     height: 4em;
-    margin: 0;
   }
 }
 .section-title span {
@@ -38,24 +25,24 @@ a:hover {
 }
 .section-title__front {
   position: relative;
-  top: 1.3em;
-  font-size: 3.2rem;
+  top: 1.1em;
+  font-size: 3rem;
 }
 @media (max-width: 576px) {
   .section-title__front {
-    top: 1.5em;
-    font-size: 2.4rem;
+    top: 1em;
+    font-size: 2rem;
   }
 }
 .section-title__behind {
   position: relative;
-  bottom: 0.24em;
-  font-size: 6.4rem;
+  bottom: 0.35em;
+  font-size: 6rem;
   opacity: 0.2;
 }
 @media (max-width: 576px) {
   .section-title__behind {
-    bottom: 0.05em;
+    bottom: 0.4em;
     font-size: 4rem;
     opacity: 0.2;
   }
@@ -63,12 +50,10 @@ a:hover {
 
 .subsection-title {
   height: 4em;
-  margin: 0;
 }
 @media (max-width: 576px) {
   .subsection-title {
     height: 3em;
-    margin: 0;
   }
 }
 .subsection-title span {
@@ -77,23 +62,24 @@ a:hover {
 }
 .subsection-title__front {
   position: relative;
-  top: 1em;
+  top: 0.78em;
   font-size: 2.4rem;
 }
 @media (max-width: 576px) {
   .subsection-title__front {
+    top: 0.66em;
     font-size: 1.8rem;
   }
 }
 .subsection-title__behind {
   position: relative;
-  bottom: 0.32em;
+  bottom: 0.46em;
   font-size: 3.6rem;
   opacity: 0.2;
 }
 @media (max-width: 576px) {
   .subsection-title__behind {
-    bottom: 0.38em;
+    bottom: 0.58em;
     font-size: 3.2rem;
     opacity: 0.2;
   }
@@ -110,123 +96,108 @@ a:hover {
   font-family: var(--ff-2);
 }
 
-.bg-image {
+.home {
   background-image: url("/assets/images/bg-home-page.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 3.5em;
-  padding: 5em;
+  margin-top: 56px; /* in order to be under the navbar */
+  padding: 150px 0;
 }
 @media (min-width: 768px) {
-  .bg-image {
-    padding: 14em;
+  .home {
+    padding: 200px 0;
   }
 }
-
-.home__fs-name-1, .home__fs-name-2 {
-  margin: 0;
-  line-height: 1em;
+@media (min-width: 1200px) {
+  .home {
+    padding: 250px 0;
+  }
 }
 .home__fs-name-1 {
-  font-size: 5.3rem;
+  font-size: 5rem;
+  line-height: 0;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .home__fs-name-1 {
     font-size: 8rem;
   }
 }
-@media (min-width: 768px) {
-  .home__fs-name-1 {
-    font-size: 15rem;
-  }
-}
 @media (min-width: 1200px) {
   .home__fs-name-1 {
-    font-size: 18rem;
+    font-size: 10rem;
   }
 }
 .home__fs-name-2 {
-  font-size: 2.7rem;
-}
-@media (min-width: 576px) {
-  .home__fs-name-2 {
-    font-size: 4.1rem;
-  }
+  font-size: 2.9rem;
 }
 @media (min-width: 768px) {
   .home__fs-name-2 {
-    font-size: 7.5rem;
+    font-size: 4.6rem;
   }
 }
 @media (min-width: 1200px) {
   .home__fs-name-2 {
-    font-size: 9.1rem;
+    font-size: 5.8rem;
   }
 }
-.home__divider {
-  margin: 1em auto;
-  border: 0;
+.home hr {
+  width: 300px;
+  margin: 10px auto;
+  border: 1.5px solid white;
   border-radius: 5px;
-  border-top: 2px solid white;
-  width: 16em;
-}
-@media (min-width: 576px) {
-  .home__divider {
-    border-top: 3px solid white;
-    width: 25em;
-  }
+  opacity: 100%;
 }
 @media (min-width: 768px) {
-  .home__divider {
-    border-top: 4px solid white;
-    width: 45em;
+  .home hr {
+    width: 450px;
+    border: 2px solid white;
   }
 }
 @media (min-width: 1200px) {
-  .home__divider {
-    border-top: 5px solid white;
-    width: 55em;
+  .home hr {
+    width: 600px;
+    border: 2.5px solid white;
   }
-}
-.home__fs-work-1, .home__fs-work-2 {
-  margin: 0;
-  line-height: 1em;
 }
 .home__fs-work-1 {
-  font-size: 3.3rem;
-}
-@media (min-width: 576px) {
-  .home__fs-work-1 {
-    font-size: 5rem;
-  }
+  font-size: 3.4rem;
 }
 @media (min-width: 768px) {
   .home__fs-work-1 {
-    font-size: 9rem;
+    font-size: 5.5rem;
   }
 }
 @media (min-width: 1200px) {
   .home__fs-work-1 {
-    font-size: 11rem;
+    font-size: 7rem;
   }
 }
 .home__fs-work-2 {
-  font-size: 1.4rem;
-}
-@media (min-width: 576px) {
-  .home__fs-work-2 {
-    font-size: 2.1rem;
-  }
+  font-size: 1.5rem;
+  line-height: 0;
 }
 @media (min-width: 768px) {
   .home__fs-work-2 {
-    font-size: 3.8rem;
+    font-size: 2.3rem;
   }
 }
 @media (min-width: 1200px) {
   .home__fs-work-2 {
-    font-size: 4.7rem;
+    font-size: 3rem;
+  }
+}
+.home .social-media img {
+  height: 40px;
+}
+@media (min-width: 768px) {
+  .home .social-media img {
+    height: 54px;
+  }
+}
+@media (min-width: 1200px) {
+  .home .social-media img {
+    height: 62px;
   }
 }
 
@@ -234,35 +205,101 @@ a:hover {
   background: var(--bg-1);
 }
 
-.brief {
-  max-width: 80em;
-}
-.brief img {
+.bio img {
   display: block;
   filter: drop-shadow(0.5em 0.5em orange);
   margin: 1em auto;
   max-height: 18em;
 }
-.brief p {
-  font-size: 1.6rem;
+.bio p {
+  font-size: 1.4rem;
   color: var(--text-1);
   text-align: justify;
 }
-.brief span {
+.bio span {
   color: var(--text-2);
 }
 
-.card-title {
-  font-size: 2.4rem;
+.carouselEducation .carousel-item {
+  height: 18em;
+}
+@media (min-width: 576px) {
+  .carouselEducation .carousel-item {
+    height: 24em;
+  }
+}
+@media (min-width: 768px) {
+  .carouselEducation .carousel-item {
+    height: 30em;
+  }
+}
+@media (min-width: 1200px) {
+  .carouselEducation .carousel-item {
+    height: 36em;
+  }
+}
+@media (min-width: 1400px) {
+  .carouselEducation .carousel-item {
+    height: 54em;
+  }
+}
+.carouselEducation .carousel-item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carouselEducation .carousel-item h4, .carouselEducation .carousel-item p {
+  background-color: orange;
+}
+.carouselEducation .carousel-item h4 {
+  font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  .carouselEducation .carousel-item h4 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .carouselEducation .carousel-item h4 {
+    font-size: 2.6rem;
+  }
+}
+.carouselEducation .carousel-item p {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .carouselEducation .carousel-item p {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .carouselEducation .carousel-item p {
+    font-size: 2rem;
+  }
 }
 
-.card-text {
-  font-size: 1.6rem;
-  color: var(--text-1);
+.resume-subsection span {
+  color: orange;
 }
-
-.card-header {
+.resume-subsection h5, .resume-subsection p {
+  color: lightgrey;
+}
+.resume-subsection h4 {
   font-size: 1.6rem;
+}
+@media (min-width: 1200px) {
+  .resume-subsection h4 {
+    font-size: 2rem;
+  }
+}
+.resume-subsection h5, .resume-subsection p {
+  font-size: 1rem;
+}
+@media (min-width: 1200px) {
+  .resume-subsection h5, .resume-subsection p {
+    font-size: 1.4rem;
+  }
 }
 
 .skills {
@@ -297,6 +334,11 @@ a:hover {
 .portfolio {
   background: var(--bg-1);
 }
+.portfolio a,
+.portfolio a::after,
+.portfolio a::before {
+  text-decoration: none;
+}
 .portfolio a {
   display: flex;
   font-weight: 700;
@@ -304,9 +346,6 @@ a:hover {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-}
-.portfolio a:hover {
-  text-decoration: none;
 }
 .portfolio .col-md-4:nth-child(1) a {
   background: orange;
@@ -336,46 +375,62 @@ a:hover {
 .contact {
   background: var(--bg-2);
 }
-.contact input {
-  padding: 15px 20px;
+.contact input,
+.contact textarea {
+  padding: 10px 15px;
   outline: none;
   background: transparent;
   border-radius: 5px;
-  color: var(--text-1);
   border: 1px solid orange;
-  font-size: 1.6rem;
+  color: var(--text-1);
+  font-size: 1rem;
   transition: 0.4s;
 }
-.contact textarea {
-  padding: 15px 20px;
-  outline: none;
-  background: transparent;
-  border-radius: 5px;
-  color: var(--text-1);
-  border: 1px solid orange;
-  font-size: 1.6rem;
-  transition: 0.4s;
-  resize: none;
+@media (min-width: 576px) {
+  .contact input,
+  .contact textarea {
+    padding: 15px 20px;
+    font-size: 1.4rem;
+  }
+}
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
+  color: darkgray;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: darkgray;
 }
 .contact label {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+}
+@media (min-width: 576px) {
+  .contact label {
+    font-size: 1.6rem;
+  }
 }
 .contact button {
   background: rgb(255, 166, 0);
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-family: "Jet-brains Mono", sans-serif;
   color: var(--text-1);
+  width: 10em;
+}
+@media (min-width: 576px) {
+  .contact button {
+    font-size: 1.4rem;
+  }
 }
 .contact button:hover {
   background: rgba(255, 166, 0, 0.822);
+  color: white;
 }
-.contact svg {
-  width: 3em;
-  height: 3em;
-  color: var(--text-1);
+.contact img {
+  height: 2em;
 }
-.contact svg:hover {
-  color: darkgray;
+@media (min-width: 576px) {
+  .contact img {
+    height: 3em;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -2,8 +2,8 @@
     background: var(--bg-1);
 }
 
-.brief {
-    max-width: 80em;
+.bio {
+    // max-width: 80em;
 
     img {
         display: block;
@@ -13,7 +13,7 @@
     }
 
     p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         color: var(--text-1);
         text-align: justify;
     }
@@ -23,15 +23,84 @@
     }
 }
 
-.card-title {
-    font-size: 2.4rem;
+.carouselEducation {
+    .carousel-item {
+        height: 18em;
+
+        @media (min-width: 576px) {
+            height: 24em;
+        }
+
+        @media (min-width: 768px) {
+            height: 30em;
+        }
+
+        @media (min-width: 1200px) {
+            height: 36em;
+        }
+
+        @media (min-width: 1400px) {
+            height: 54em;
+        }
+    
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        h4, p {
+            background-color: orange;
+        }
+
+        h4 {
+            font-size: 1.6rem;
+    
+            @media (min-width: 768px) {
+                font-size: 2rem;
+            }
+    
+            @media (min-width: 1200px) {
+                font-size: 2.6rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+
+            @media (min-width: 768px) {
+                font-size: 1.4rem;
+            }
+    
+            @media (min-width: 1200px) {
+                font-size: 2rem;
+            }
+        }
+    }
 }
 
-.card-text {
-    font-size: 1.6rem;
-    color: var(--text-1);
-}
+.resume-subsection {
+    span {
+        color: orange;
+    }
 
-.card-header {
-    font-size: 1.6rem;
+    h5, p {
+        color: lightgrey;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+
+        @media (min-width: 1200px) {
+            font-size: 2rem;
+        }
+    }
+
+    h5, p {
+        font-size: 1rem;
+
+        @media (min-width: 1200px) {
+            font-size: 1.4rem;
+        }
+    }
 }

@@ -1,6 +1,12 @@
 .portfolio {
     background: var(--bg-1);
 
+    a, 
+    a::after,
+    a::before {
+        text-decoration: none;
+    }
+
     a {
         display: flex;
         font-weight: 700;
@@ -8,10 +14,6 @@
         align-items: center;
         justify-content: center;
         border-radius: 10px;
-    }
-
-    a:hover {
-        text-decoration: none;
     }
 
     .col-md-4:nth-child(1) a {
