@@ -205,101 +205,49 @@
   background: var(--bg-1);
 }
 
-.bio img {
-  display: block;
+.bio__photo {
   filter: drop-shadow(0.5em 0.5em orange);
-  margin: 1em auto;
-  max-height: 18em;
+  max-height: 25em;
 }
-.bio p {
-  font-size: 1.4rem;
+.bio__description {
+  font-size: 1.2rem;
   color: var(--text-1);
   text-align: justify;
+}
+@media (min-width: 1400px) {
+  .bio__description {
+    font-size: 1.4rem;
+  }
+}
+.bio__description p:first-of-type {
+  font-size: 1.4rem;
+}
+@media (min-width: 1400px) {
+  .bio__description p:first-of-type {
+    font-size: 1.6rem;
+  }
 }
 .bio span {
   color: var(--text-2);
 }
-
-.carouselEducation .carousel-item {
-  height: 18em;
+.bio .btn-resume,
+.bio .btn-contact {
+  width: 8em;
 }
-@media (min-width: 576px) {
-  .carouselEducation .carousel-item {
-    height: 24em;
-  }
+.bio .btn-resume a {
+  background: orange;
+  transition: background 300ms ease;
 }
-@media (min-width: 768px) {
-  .carouselEducation .carousel-item {
-    height: 30em;
-  }
+.bio .btn-resume a:hover {
+  background: orangered;
+  transition: background 300ms ease;
 }
-@media (min-width: 1200px) {
-  .carouselEducation .carousel-item {
-    height: 36em;
-  }
+.bio .btn-contact a {
+  transition: background 300ms ease;
 }
-@media (min-width: 1400px) {
-  .carouselEducation .carousel-item {
-    height: 54em;
-  }
-}
-.carouselEducation .carousel-item img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.carouselEducation .carousel-item h4, .carouselEducation .carousel-item p {
-  background-color: orange;
-}
-.carouselEducation .carousel-item h4 {
-  font-size: 1.6rem;
-}
-@media (min-width: 768px) {
-  .carouselEducation .carousel-item h4 {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 1200px) {
-  .carouselEducation .carousel-item h4 {
-    font-size: 2.6rem;
-  }
-}
-.carouselEducation .carousel-item p {
-  font-size: 1rem;
-}
-@media (min-width: 768px) {
-  .carouselEducation .carousel-item p {
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 1200px) {
-  .carouselEducation .carousel-item p {
-    font-size: 2rem;
-  }
-}
-
-.resume-subsection span {
-  color: orange;
-}
-.resume-subsection h5, .resume-subsection p {
-  color: lightgrey;
-}
-.resume-subsection h4 {
-  font-size: 1.6rem;
-}
-@media (min-width: 1200px) {
-  .resume-subsection h4 {
-    font-size: 2rem;
-  }
-}
-.resume-subsection h5, .resume-subsection p {
-  font-size: 1rem;
-}
-@media (min-width: 1200px) {
-  .resume-subsection h5, .resume-subsection p {
-    font-size: 1.4rem;
-  }
+.bio .btn-contact a:hover {
+  background: orange;
+  transition: background 300ms ease;
 }
 
 .skills {
@@ -334,42 +282,16 @@
 .portfolio {
   background: var(--bg-1);
 }
-.portfolio a,
-.portfolio a::after,
-.portfolio a::before {
-  text-decoration: none;
+.portfolio .card {
+  background: #211F33;
+  transition: background 300ms ease;
+  height: 30em;
+  max-width: 20em;
 }
-.portfolio a {
-  display: flex;
-  font-weight: 700;
-  font-size: 1.6rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-}
-.portfolio .col-md-4:nth-child(1) a {
+.portfolio .card:hover {
   background: orange;
-}
-.portfolio .col-md-4:nth-child(1) a:hover {
-  background: rgb(185, 121, 0);
-}
-.portfolio .col-md-4:nth-child(2) a {
-  background: darkcyan;
-}
-.portfolio .col-md-4:nth-child(2) a:hover {
-  background: rgb(0, 117, 117);
-}
-.portfolio .col-md-4:nth-child(3) a {
-  background: darkmagenta;
-}
-.portfolio .col-md-4:nth-child(3) a:hover {
-  background: rgb(113, 0, 113);
-}
-.portfolio .col-md-4:nth-child(4) a {
-  background: darkred;
-}
-.portfolio .col-md-4:nth-child(4) a:hover {
-  background: rgb(114, 0, 0);
+  transition: background 300ms ease;
+  cursor: pointer;
 }
 
 .contact {

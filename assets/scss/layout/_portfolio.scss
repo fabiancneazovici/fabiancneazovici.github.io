@@ -1,50 +1,18 @@
 .portfolio {
     background: var(--bg-1);
 
-    a, 
-    a::after,
-    a::before {
-        text-decoration: none;
+    .card {
+        background: #211F33;
+        transition: background 300ms ease;
+
+        height: 30em;
+        max-width: 20em;
     }
 
-    a {
-        display: flex;
-        font-weight: 700;
-        font-size: 1.6rem;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-    }
-
-    .col-md-4:nth-child(1) a {
+    .card:hover {
         background: orange;
-    }
-    
-    .col-md-4:nth-child(1) a:hover {
-        background: rgb(185, 121, 0);
-    }
-    
-    .col-md-4:nth-child(2) a {
-        background: darkcyan;
-    }
-    
-    .col-md-4:nth-child(2) a:hover {
-        background: rgb(0, 117, 117);
-    }
-    
-    .col-md-4:nth-child(3) a {
-        background: darkmagenta;
-    }
-    
-    .col-md-4:nth-child(3) a:hover {
-        background: rgb(113, 0, 113);
-    }
-    
-    .col-md-4:nth-child(4) a {
-        background: darkred;
-    }
-    
-    .col-md-4:nth-child(4) a:hover {
-        background: rgb(114, 0, 0);
+        transition: background 300ms ease;
+
+        cursor: pointer;
     }
 }

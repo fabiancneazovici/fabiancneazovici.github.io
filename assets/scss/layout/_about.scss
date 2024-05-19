@@ -3,104 +3,141 @@
 }
 
 .bio {
-    // max-width: 80em;
-
-    img {
-        display: block;
+    &__photo {
         filter: drop-shadow(0.5em 0.5em orange);
-        margin: 1em auto;
-        max-height: 18em;
+
+        max-height: 25em;
     }
 
-    p {
-        font-size: 1.4rem;
+    &__description {
+        font-size: 1.2rem;
         color: var(--text-1);
         text-align: justify;
+
+        @media (min-width: 1400px) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__description p:first-of-type {
+        font-size: 1.4rem;
+
+        @media (min-width: 1400px) {
+            font-size:  1.6rem;
+        }
     }
 
     span {
         color: var(--text-2);
     }
-}
 
-.carouselEducation {
-    .carousel-item {
-        height: 18em;
+    .btn-resume, 
+    .btn-contact {
+        width: 8em;
+    }
 
-        @media (min-width: 576px) {
-            height: 24em;
+    .btn-resume {
+        a {
+            background: orange;
+            transition: background 300ms ease;
         }
 
-        @media (min-width: 768px) {
-            height: 30em;
+        a:hover {
+            background: orangered;
+            transition: background 300ms ease;
+        }
+    }
+
+    .btn-contact {
+        a {
+            transition: background 300ms ease;
         }
 
-        @media (min-width: 1200px) {
-            height: 36em;
-        }
-
-        @media (min-width: 1400px) {
-            height: 54em;
-        }
-    
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    
-        h4, p {
-            background-color: orange;
-        }
-
-        h4 {
-            font-size: 1.6rem;
-    
-            @media (min-width: 768px) {
-                font-size: 2rem;
-            }
-    
-            @media (min-width: 1200px) {
-                font-size: 2.6rem;
-            }
-        }
-
-        p {
-            font-size: 1rem;
-
-            @media (min-width: 768px) {
-                font-size: 1.4rem;
-            }
-    
-            @media (min-width: 1200px) {
-                font-size: 2rem;
-            }
+        a:hover {
+            background: orange;
+            transition: background 300ms ease;
         }
     }
 }
 
-.resume-subsection {
-    span {
-        color: orange;
-    }
+// .carouselEducation {
+//     .carousel-item {
+//         height: 18em;
 
-    h5, p {
-        color: lightgrey;
-    }
+//         @media (min-width: 576px) {
+//             height: 24em;
+//         }
 
-    h4 {
-        font-size: 1.6rem;
+//         @media (min-width: 768px) {
+//             height: 30em;
+//         }
 
-        @media (min-width: 1200px) {
-            font-size: 2rem;
-        }
-    }
+//         @media (min-width: 1200px) {
+//             height: 36em;
+//         }
 
-    h5, p {
-        font-size: 1rem;
+//         @media (min-width: 1400px) {
+//             height: 54em;
+//         }
+    
+//         img {
+//             height: 100%;
+//             width: 100%;
+//             object-fit: cover;
+//         }
+    
+//         h4, p {
+//             background-color: orange;
+//         }
 
-        @media (min-width: 1200px) {
-            font-size: 1.4rem;
-        }
-    }
-}
+//         h4 {
+//             font-size: 1.6rem;
+    
+//             @media (min-width: 768px) {
+//                 font-size: 2rem;
+//             }
+    
+//             @media (min-width: 1200px) {
+//                 font-size: 2.6rem;
+//             }
+//         }
+
+//         p {
+//             font-size: 1rem;
+
+//             @media (min-width: 768px) {
+//                 font-size: 1.4rem;
+//             }
+    
+//             @media (min-width: 1200px) {
+//                 font-size: 2rem;
+//             }
+//         }
+//     }
+// }
+
+// .resume-subsection {
+//     span {
+//         color: orange;
+//     }
+
+//     h5, p {
+//         color: lightgrey;
+//     }
+
+//     h4 {
+//         font-size: 1.6rem;
+
+//         @media (min-width: 1200px) {
+//             font-size: 2rem;
+//         }
+//     }
+
+//     h5, p {
+//         font-size: 1rem;
+
+//         @media (min-width: 1200px) {
+//             font-size: 1.4rem;
+//         }
+//     }
+// }
