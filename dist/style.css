@@ -253,30 +253,56 @@
 .skills {
   background: var(--bg-2);
 }
-.skills img {
-  display: block;
-  max-height: 15em;
-  margin: 0 auto;
+.skills .skill-container {
+  border-left: 4px solid orange;
+  border-radius: 2px;
+  background: var(--bg-2);
+  transition: background 500ms ease;
 }
 @media (min-width: 768px) {
-  .skills img {
-    max-height: 10em;
+  .skills .skill-container {
+    border-left: 6px solid orange;
+    border-radius: 3px;
   }
 }
-@media (min-width: 992px) {
-  .skills img img {
-    max-height: 14em;
+@media (min-width: 1200px) {
+  .skills .skill-container {
+    border-left: 8px solid orange;
+    border-radius: 4px;
   }
 }
-.skills h3 {
-  font-family: var(--ff-2);
-  font-size: 1.8rem;
-  font-weight: 700;
+.skills .skill-container h3 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .skills .skill-container h3 {
+    font-size: 3rem;
+  }
+}
+.skills .skill-container img {
+  max-height: 2em;
+}
+@media (min-width: 768px) {
+  .skills .skill-container img {
+    max-height: 4em;
+  }
+}
+.skills .skill-container h4 {
   color: white;
-  text-align: center;
+  font-family: var(--ff-2);
+  font-weight: 700;
 }
-.skills .progress {
-  margin: 0 auto;
+.skills .skill-container .progress {
+  height: 10px;
+}
+@media (min-width: 768px) {
+  .skills .skill-container .progress {
+    height: 15px;
+  }
+}
+.skills .skill-container:hover {
+  background: #211F33;
+  transition: background 500ms ease;
 }
 
 .portfolio {
@@ -354,5 +380,176 @@
 @media (min-width: 576px) {
   .contact img {
     height: 3em;
+  }
+}
+
+.resume {
+  background-image: url("/assets/images/bg-home-page.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+@media (min-width: 768px) {
+  .resume {
+    padding: 150px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .resume {
+    padding: 200px 0;
+  }
+}
+.resume__fs-name-1 {
+  font-size: 5rem;
+  line-height: 0;
+}
+@media (min-width: 768px) {
+  .resume__fs-name-1 {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .resume__fs-name-1 {
+    font-size: 10rem;
+  }
+}
+.resume__fs-name-2 {
+  font-size: 2.9rem;
+}
+@media (min-width: 768px) {
+  .resume__fs-name-2 {
+    font-size: 4.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .resume__fs-name-2 {
+    font-size: 5.8rem;
+  }
+}
+.resume hr {
+  width: 300px;
+  margin: 10px auto;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  opacity: 100%;
+}
+@media (min-width: 768px) {
+  .resume hr {
+    width: 450px;
+    border: 2px solid white;
+  }
+}
+@media (min-width: 1200px) {
+  .resume hr {
+    width: 600px;
+    border: 2.5px solid white;
+  }
+}
+.resume__fs-resume {
+  font-size: 4.3rem;
+}
+@media (min-width: 768px) {
+  .resume__fs-resume {
+    font-size: 6.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .resume__fs-resume {
+    font-size: 8.3rem;
+  }
+}
+
+.education {
+  background: var(--bg-2);
+}
+.education .carouselEducation .carousel-item {
+  height: 18em;
+}
+@media (min-width: 576px) {
+  .education .carouselEducation .carousel-item {
+    height: 24em;
+  }
+}
+@media (min-width: 768px) {
+  .education .carouselEducation .carousel-item {
+    height: 30em;
+  }
+}
+@media (min-width: 1200px) {
+  .education .carouselEducation .carousel-item {
+    height: 36em;
+  }
+}
+@media (min-width: 1400px) {
+  .education .carouselEducation .carousel-item {
+    height: 54em;
+  }
+}
+.education .carouselEducation .carousel-item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.education .carouselEducation .carousel-item h3, .education .carouselEducation .carousel-item p {
+  background-color: orange;
+}
+.education .carouselEducation .carousel-item h3 {
+  font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  .education .carouselEducation .carousel-item h3 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .education .carouselEducation .carousel-item h3 {
+    font-size: 2.6rem;
+  }
+}
+.education .carouselEducation .carousel-item p {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .education .carouselEducation .carousel-item p {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .education .carouselEducation .carousel-item p {
+    font-size: 2rem;
+  }
+}
+
+.work {
+  background: var(--bg-1);
+}
+.work span {
+  color: orange;
+}
+.work h3, .work h4 {
+  text-align: start;
+}
+.work p {
+  text-align: justify;
+}
+.work h4, .work p {
+  color: lightgrey;
+}
+.work h3 {
+  font-size: 1.6rem;
+}
+@media (min-width: 1200px) {
+  .work h3 {
+    font-size: 2rem;
+  }
+}
+.work h4, .work p {
+  font-size: 1rem;
+}
+@media (min-width: 1200px) {
+  .work h4, .work p {
+    font-size: 1.4rem;
   }
 }/*# sourceMappingURL=style.css.map */

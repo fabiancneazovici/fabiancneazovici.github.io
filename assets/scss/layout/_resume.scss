@@ -1,0 +1,76 @@
+.resume {
+    background-image: url("/assets/images/bg-home-page.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 100px 0;
+
+    @media (min-width: 768px) {
+        padding: 150px 0;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 200px 0;
+    }
+
+    &__fs-name-1 {
+        font-size: 5rem;
+        line-height: 0;
+
+        @media (min-width: 768px) {
+            font-size: 8rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 10rem;
+        }
+    }
+
+    &__fs-name-2 {
+        font-size: 2.9rem;
+
+        @media (min-width: 768px) {
+            font-size: 4.6rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 5.8rem;
+        }
+    }
+
+    hr {
+        width: 300px;
+        
+        margin: 10px auto;
+
+        border: 1.5px solid white;
+        border-radius: 5px;
+
+        opacity: 100%;
+
+        @media (min-width: 768px) {
+            width: 450px;
+
+            border: 2px solid white;
+        }
+
+        @media (min-width: 1200px) {
+            width: 600px;
+
+            border: 2.5px solid white;
+        }
+    }
+
+    &__fs-resume {
+        font-size: 4.3rem;
+
+        @media (min-width: 768px) {
+            font-size: 6.5rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 8.3rem;
+        }
+    }
+}

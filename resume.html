@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Fabian Cneazovici">
+    <meta name="keywords" content="fabian, cneazovici, software, developer, html, css, javascript, c, c++, c#, python">
+    <meta name="description" content="Hello, I'm Fabian, and welcome to my resume page. Here you can see my education and my work experiences.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabian Cneazovici | Resume</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+    <link rel="stylesheet" href="dist/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,75;0,300;0,400;0,500;0,700;0,900;1,75;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,75..800;1,75..800&family=Roboto:ital,wght@0,75;0,300;0,400;0,500;0,700;0,900;1,75;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <div class="resume container-fluid text-center">
+            <h1>
+                <span class="resume__fs-name-1 text-white">FABIAN</span><br>
+                <span class="resume__fs-name-2 text-white fw-bold">CNEAZOVICI</span><br>
+                <hr>
+                <span class="resume__fs-resume text-white">Resume</span><br>
+            </h1>
+        </div>
+
+
+        <!-- EDUCATION SUBSECTION -->
+        <div class="education container-fluid text-center pb-5 pt-1">
+            <h2 class="section-title text-center my-4"><span class="section-title__front">EDUCATION</span><br><span class="section-title__behind">EDUCATION</span></h2>
+            <div id="carouselEducation" class="carousel slide mb-2 carouselEducation">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselEducation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselEducation" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/Biomedical-Engineering.jpg" class="d-block w-75 mx-auto" alt="Slide-Biomedical-Engineering">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="fw-bold px-3 py-1 rounded mx-auto">Bachelor's Degree</h3>
+                            <p class="px-3 py-1 lh-1 rounded mx-auto">Biomedical Engineering</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/Electronics-Engineering.jpg" class="d-block w-75 mx-auto" alt="Slide-Electronics-Engineering">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="fw-bold px-3 py-1 rounded mx-auto">Mater's Degree</h3>
+                            <p class="px-3 py-1 lh-1 rounded mx-auto">Electronic Engineering and Telecomunication for Energy</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEducation" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselEducation" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="work container-fluid text-center pb-5 pt-1">
+            <!-- RESUME SUBSECTION -->
+            <h2 class="section-title text-center my-4"><span class="section-title__front">RESUME</span><br><span class="section-title__behind">RESUME</span></h2>
+            <div class="resume-subsection container-fluid w-75">
+                <div class="row mb-5 pb-4 border-bottom">
+                    <div class="col-md-6 col-xxl-5">
+                        <h3 class="text-white">VICI&C - <span>Embedded Software Developer</span></h3>
+                        <h4>Aug 2023 - Present</h4>
+                    </div>
+                    <p class="col-md-6 col-xxl-7">Software development for embedded applications in the field of industrial automation and non-contact measurements</p>
+                </div>
+                <div class="row mb-5 pb-4 border-bottom">
+                    <div class="col-md-6 col-xxl-5">
+                        <h3 class="text-white">Electrolux - <span>Software Engineer</span></h3>
+                        <h4>Jun 2022 - May 2023</h4>
+                    </div>
+                    <p class="col-md-6 col-xxl-7">Firmware Development and Component Testing in HIL environment for embedded applications related to induction hobs</p>
+                </div>
+                <div class="row pb-4 border-bottom">
+                    <div class="col-md-6 col-xxl-5">
+                        <h3 class="text-white">ALTEN Italia - <span>Software Developer</span></h3>
+                        <h4>Feb 2021 - May 2022</h4>
+                    </div>
+                    <p class="col-md-6 col-xxl-7">Unit Testing and Firware Development for embedded applications in the railway sector</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.education {
+    background: var(--bg-2);
+
+    .carouselEducation {
+        .carousel-item {
+            height: 18em;
+
+            @media (min-width: 576px) {
+                height: 24em;
+            }
+
+            @media (min-width: 768px) {
+                height: 30em;
+            }
+
+            @media (min-width: 1200px) {
+                height: 36em;
+            }
+
+            @media (min-width: 1400px) {
+                height: 54em;
+            }
+        
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        
+            h3, p {
+                background-color: orange;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+        
+                @media (min-width: 768px) {
+                    font-size: 2rem;
+                }
+        
+                @media (min-width: 1200px) {
+                    font-size: 2.6rem;
+                }
+            }
+
+            p {
+                font-size: 1rem;
+
+                @media (min-width: 768px) {
+                    font-size: 1.4rem;
+                }
+        
+                @media (min-width: 1200px) {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
